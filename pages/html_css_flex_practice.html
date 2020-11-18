@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Flex page</title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: row;
+            }
+            .column-1{
+                background-color: gold;
+                flex: 1;
+                padding: 5px;
+            }
+            .column-2{
+                flex-direction: column;
+                flex: 5 ;
+            }
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 20px;
+            }
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: green;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+            .sideBarRightItem{
+                flex: 1 0 0;
+                border: 0px solid green;
+                background: hotpink;
+            }
+            .mainContentItem{
+                text-align: left;
+                background: deepskyblue;
+                flex: 5 0px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="column-1"><h3>Navigation bar</h3></nav>
+        <div class="column-2">
+            <header class="headerContainer">Header</header>
+            <div class="mainContainer">
+                <section class="mainContentItem">
+                    <article>
+                        <h2>First Article</h2>
+                        <p>Tacos actually microdosing, pour-over semiotics banjo chicharones retro fanny pack portland everyday carry vinyl typewriter.
+                            Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single origin coffee cold-pressed.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>Second Article</h2>
+                        <p>Tacos actually microdosing, pour-over semiotics banjo chicharones retro fanny pack portland everyday carry vinyl typewriter.
+                            Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single origin coffee cold-pressed.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>Third Article</h2>
+                        <p>Tacos actually microdosing, pour-over semiotics banjo chicharones retro fanny pack portland everyday carry vinyl typewriter.
+                            Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single origin coffee cold-pressed.
+                        </p>
+                    </article>
+                </section>
+                <sidebar class="sideBarRightItem"><div class="column-2"><p>Right Side Bar</p></div></sidebar>
+            </div>
+            <footer class="footerContainer">Footer</footer>
+        </div>
+    </body>
+</html> 
