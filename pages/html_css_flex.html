@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample Flex page</title>
+        <style>
+            body{
+                padding: 2em;
+            }
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 20px;
+            }
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+            .sideBarItem{
+                flex: 1 0 0;
+                border: 0px solid green;
+            }
+            .sideBarLeftItem{
+                background: gold;
+                order:1;
+            }
+            .sideBarRightItem{
+                background: hotpink;
+                order:3;
+            }
+            .mainContentItem{
+                text-align: left;
+                background: deepskyblue;
+                flex: 3 0px;
+                order:2;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer">Header - Sample FlexBox</header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharones retro fanny pack portland everyday carry vinyl typewriter.
+                        Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single origin coffee cold-pressed.
+                    </p>
+                </article>
+                <article>
+                    <h2>Second Article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharones retro fanny pack portland everyday carry vinyl typewriter.
+                        Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single origin coffee cold-pressed.
+                    </p>
+                </article>
+                <article>
+                    <h2>Third Article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharones retro fanny pack portland everyday carry vinyl typewriter.
+                        Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single origin coffee cold-pressed.
+                    </p>
+                </article>
+            </section>
+            <sidebar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sidebar>
+            <sidebar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sidebar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</html> 
